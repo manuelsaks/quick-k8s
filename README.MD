@@ -3,13 +3,13 @@ The script creates Ubuntu LTS machine using Multipass and installs RKE2 with Ran
 
 ## Windows
 1. Make sure that you have running and correctly configured Hyper-V.
-1. Install Multipass and choose Hyper-V as provider (download: multipass.run/install).
-1. To get help run:
+2. Install Multipass and choose Hyper-V as provider (download: multipass.run/install).
+3. To get help run:
   ```
   powershell windows\hyperv_run.ps1 -h 
   ```
-1. To try it out run:
+4. To try it out run:
   ```
   powershell windows\hyperv_run.ps1
   ```
-1. It takes about 5-10 minutes.
+5. It takes about 5-10 minutes.
