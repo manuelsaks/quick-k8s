@@ -2,10 +2,10 @@
 
 param(
     [switch]$h,
-    $name = "rke2",
-    $disk = "18",
-    $cpus = "4",
-    $ram = "8"
+    [string]$name = "rke2",
+    [string]$disk = "18",
+    [string]$cpus = "4",
+    [string]$ram = "8"
 )
 
 $disk = $disk + "G"
