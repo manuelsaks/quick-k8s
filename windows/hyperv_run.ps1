@@ -5,7 +5,7 @@ param(
     [string]$name = "rke2",
     [string]$disk = "18",
     [string]$cpus = "4",
-    [string]$ram = "8"
+    [string]$ram = "6"
 )
 
 $disk = $disk + "G"
@@ -19,10 +19,10 @@ if ($h) {
       -name  Give a name for your instance.
       -disk  Specify disk size in GB. Recommended at least 18.
       -cpus  Number of CPU cores. Recommended at least 4.
-      -ram   Specify amount of RAM memory in GB. Recommended at least 8.
+      -ram   Specify amount of RAM memory in GB. Recommended at least 6.
 
     `nDefault:
-      powershell run.ps1 -name rke2 -ram 8 -cpus 4 -disk 18
+      powershell run.ps1 -name rke2 -ram 6 -cpus 4 -disk 18
 "@
     return
 }
