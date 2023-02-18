@@ -27,9 +27,9 @@ It takes about 5-10 minutes.
     ```
 
 ## Removal
-- To delete a specific instance:
+- To permanently delete a specific instance:
   ```
-  multipass delete <instance-name>
+  multipass delete <instance-name> --purge
   ```
 
 - To permanently delete all instances:
