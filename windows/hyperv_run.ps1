@@ -72,7 +72,7 @@ if ($approve -eq "y") {
     Start-Sleep -Seconds 30
     multipass exec $name -- sudo kubectl create namespace cattle-system
     Start-Sleep -Seconds 30
-    multipass exec $name -- sudo helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=$name.mshome.net
+    multipass exec $name -- sudo helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=$name.mshome.net  --set global.cattle.psp.enabled="false"
     Write-Output "Isn't ready yet. Wait a few seconds..."
     multipass exec $name -- sudo bash /run/tmp/check.sh
     Start-Sleep -Seconds 5

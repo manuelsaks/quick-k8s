@@ -92,7 +92,7 @@ if [ "$runApprove" == "y" ]; then
   sleep 30
   multipass exec $name -- sudo kubectl create namespace cattle-system
   sleep 30
-  multipass exec $name -- sudo helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=$name.multipass
+  multipass exec $name -- sudo helm install rancher rancher-stable/rancher --namespace cattle-system --set hostname=$name.multipass  --set global.cattle.psp.enabled="false"
   echo "Isn't ready yet. Wait a few seconds..."
   multipass exec $name -- sudo su -c 'pass=""; while [ -z "$pass" ]; do sleep 1; pass=$(sudo cat /var/log/containers/* | grep "Bootstrap Password" | awk "{print $NF}"); done'
   sleep 5
