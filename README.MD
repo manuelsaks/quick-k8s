@@ -5,14 +5,14 @@ It takes about 5-10 minutes.
 
 ## Linux
 1. Install Multipass and make sure it's working _(download: multipass.run/install)_.
-2. To get help run:
-  ```
-  bash linux/run.sh -h 
-  ```
-3. To try it out run:
-  ```
-  bash linux/run.sh
-  ```
+1. To get help run:
+    ```
+    bash linux/run.sh -h 
+    ```
+1. To try it out run:
+    ```
+    bash linux/run.sh
+    ```
 
 ## Windows
 1. Make sure that you have running and correctly configured Hyper-V.
@@ -27,9 +27,9 @@ It takes about 5-10 minutes.
   ```
 
 ## Removal
-- To delete a specific instance:
+- To permanently delete a specific instance:
   ```
-  multipass delete <instance-name>  --purge
+  multipass delete <instance-name> --purge
   ```
 
 - To permanently delete all instances:
