@@ -19,7 +19,7 @@ It takes about 5-10 minutes.
 2. Install Multipass and choose Hyper-V as provider _(download: multipass.run/install)_.
 3. To get help run:
   ```
-  powershell windows\hyperv_run.ps1 -h 
+  powershell windows\hyperv_run.ps1 -h
   ```
 4. To try it out run:
   ```
@@ -29,7 +29,7 @@ It takes about 5-10 minutes.
 ## Removal
 - To delete a specific instance:
   ```
-  multipass delete <instance-name>
+  multipass delete <instance-name>  --purge
   ```
 
 - To permanently delete all instances:
